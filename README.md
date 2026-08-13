@@ -2,8 +2,8 @@
 
 > Create your own official Hacker House Goa 2026 profile frame and share it with the world.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://hh-goa-frame-self.vercel.app)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sharshita24/HH-GOA)
+[![Live Demo](hh-goa2026-wine.vercel.app)](hh-goa2026-wine.vercel.app)
+[![GitHub Repository](https://github.com/Sharshita24/HH-GOA)](https://github.com/Sharshita24/HH-GOA)
 
 ---
 
