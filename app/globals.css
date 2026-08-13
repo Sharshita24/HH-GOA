@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@500;600;700&family=Orbitron:wght@500;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,900&family=Plus+Jakarta+Sans:wght@400;500;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --goa-green: #0b6635;
+  --goa-green-dark: #063d1f;
+  --goa-yellow: #ffd600;
+  --goa-pink: #ff007a;
+  --goa-cyan: #4de2ff;
+  --bg-1: #020b10;
+  --bg-2: #071c17;
+  --bg-3: #0f1330;
+  --foreground: #ecf9f1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background:
+    radial-gradient(circle at top left, rgba(241, 219, 144, 0.10), transparent 20%),
+    radial-gradient(circle at top right, rgba(10, 58, 40, 0.6), transparent 28%),
+    linear-gradient(180deg, #08150f 0%, #0b1d17 35%, #07120f 100%);
+  background-attachment: fixed;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 26px 26px;
+  mask-image: radial-gradient(circle at center, black 30%, transparent 100%);
+  pointer-events: none;
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.font-serif-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-mono-tech {
+  font-family: 'Fira Code', monospace;
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(3, 18, 18, 0.9);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--goa-yellow), var(--goa-pink));
+  border-radius: 999px;
+}
+
+.goa-card {
+  background: linear-gradient(160deg, rgba(17, 42, 33, 0.94), rgba(9, 24, 23, 0.94));
+  border: 1px solid rgba(255, 214, 0, 0.7);
+  box-shadow: 0 0 0 1px rgba(255, 214, 0, 0.3), 0 25px 60px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+}
+
+.goa-button-yellow {
+  background: linear-gradient(135deg, #ffe066 0%, #ffd600 35%, #ffc400 100%);
+  color: #02160f;
+  border: 2px solid rgba(3, 18, 18, 0.9);
+  box-shadow: 0 0 20px rgba(255, 214, 0, 0.35), 8px 8px 0 rgba(4, 24, 17, 0.9);
+  font-weight: 900;
+}
+.goa-button-yellow:hover {
+  transform: translate(-2px, -2px) scale(1.01);
+  box-shadow: 0 0 24px rgba(255, 214, 0, 0.48), 12px 12px 0 rgba(4, 24, 17, 0.9);
+}
+
+.goa-button-pink {
+  background: linear-gradient(135deg, #ff5db2 0%, #ff007a 35%, #d40068 100%);
+  color: #ffffff;
+  border: 2px solid rgba(255,255,255,0.5);
+  box-shadow: 0 0 22px rgba(255, 0, 122, 0.35), 8px 8px 0 rgba(4, 24, 17, 0.9);
+  font-weight: 900;
+}
+.goa-button-pink:hover {
+  transform: translate(-2px, -2px) scale(1.01);
+  box-shadow: 0 0 26px rgba(255, 0, 122, 0.45), 12px 12px 0 rgba(4, 24, 17, 0.9);
+}
+
+.touch-none-canvas {
+  touch-action: none;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 rgba(255,214,0,0.1); }
+  50% { box-shadow: 0 0 24px rgba(255,214,0,0.4); }
+}
+
+.float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}

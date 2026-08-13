@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="16" fill="#063c1f" />
+  <g transform="translate(12,12)">
+    <circle cx="48" cy="48" r="36" fill="#ffd600" />
+    <text x="48" y="58" font-family="sans-serif" font-weight="700" font-size="28" text-anchor="middle" fill="#063c1f">HH</text>
+  </g>
+</svg>
