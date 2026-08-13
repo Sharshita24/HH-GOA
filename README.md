@@ -9,7 +9,7 @@
 
 ## ⚡ Live App
 
-Try it here: [https://hh-goa2026.vercel.app](https://hh-goa2026.vercel.app)
+Try it here: [https://hh-goa2026.vercel.app](hh-goa2026-wine.vercel.app)
 
 ---
 
