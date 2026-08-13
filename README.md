@@ -2,8 +2,6 @@
 
 > Create your own official Hacker House Goa 2026 profile frame and share it with the world.
 
-[![Live Demo](hh-goa2026-wine.vercel.app)](hh-goa2026-wine.vercel.app)
-[![GitHub Repository](https://github.com/Sharshita24/HH-GOA)](https://github.com/Sharshita24/HH-GOA)
 
 ---
 
